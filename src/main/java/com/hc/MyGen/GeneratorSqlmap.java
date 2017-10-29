@@ -18,8 +18,9 @@ public class GeneratorSqlmap {
 		//指定 逆向工程配置文件
 		// File configFile = new File("generatorConfig.xml"); 
 // 		InputStream in = this.getClass().getResourceAsStream("/generatorConfig.xml");
- 		InputStream in = GeneratorSqlmap.class.getClassLoader().
-			getResourceAsStream("generatorConfig.xml");
+		InputStream in = this.getClass().getClassLoader().getResourceAsStream("generatorConfig.xml");
+ 		// InputStream in = GeneratorSqlmap.class.getClassLoader().
+			// getResourceAsStream("generatorConfig.xml");
 		ConfigurationParser cp = new ConfigurationParser(warnings);
 		Configuration config = cp.parseConfiguration(in);
 		DefaultShellCallback callback = new DefaultShellCallback(overwrite);
