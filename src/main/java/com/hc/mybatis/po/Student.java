@@ -60,4 +60,10 @@ public class Student {
     public void setSex(Integer sex) {
         this.sex = sex;
     }
+
+	@Override
+	public String toString() {
+		return "Student [id=" + id + ", name=" + name + ", chinese=" + chinese + ", english=" + english + ", math="
+				+ math + "]";
+	}
 }
