@@ -11,6 +11,8 @@ public class Student {
 
     private Float math;
 
+    private Integer sex;
+
     public Integer getId() {
         return id;
     }
@@ -51,9 +53,11 @@ public class Student {
         this.math = math;
     }
 
-	@Override
-	public String toString() {
-		return "Student [id=" + id + ", name=" + name + ", chinese=" + chinese + ", english=" + english + ", math="
-				+ math + "]";
-	}
+    public Integer getSex() {
+        return sex;
+    }
+
+    public void setSex(Integer sex) {
+        this.sex = sex;
+    }
 }
