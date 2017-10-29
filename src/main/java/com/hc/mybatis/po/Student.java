@@ -11,6 +11,8 @@ public class Student {
 
     private Float math;
 
+    private Integer sex;
+
     public Integer getId() {
         return id;
     }
@@ -49,5 +51,13 @@ public class Student {
 
     public void setMath(Float math) {
         this.math = math;
+    }
+
+    public Integer getSex() {
+        return sex;
+    }
+
+    public void setSex(Integer sex) {
+        this.sex = sex;
     }
 }
