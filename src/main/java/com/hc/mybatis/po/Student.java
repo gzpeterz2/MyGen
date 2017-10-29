@@ -50,4 +50,10 @@ public class Student {
     public void setMath(Float math) {
         this.math = math;
     }
+
+	@Override
+	public String toString() {
+		return "Student [id=" + id + ", name=" + name + ", chinese=" + chinese + ", english=" + english + ", math="
+				+ math + "]";
+	}
 }
